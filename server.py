@@ -18,4 +18,4 @@ def serve(path):
             return send_from_directory('app/build', 'index.html')
 
 if __name__ == '__main__':
-    sockectIO.run(app)
+    sockectIO.run(app, host='0.0.0.0', port=5000)
